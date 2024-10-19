@@ -1,0 +1,11 @@
+/* Custom Tailwind CSS styles */
+.bg-midnight-blue {
+    background-color: #2D3E50;
+  }
+  .text-neon-orange {
+    color: #FF8C42;
+  }
+  .bg-light-gray {
+    background-color: #F5F5F5;
+  }
+  

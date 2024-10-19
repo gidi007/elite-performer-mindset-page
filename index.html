@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Performer Mindset</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light-gray text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="relative bg-midnight-blue min-h-screen text-white">
+    <div class="container mx-auto px-6 py-20 text-center">
+      <h1 class="text-5xl font-bold leading-tight">
+        Unlock Your Potential: Build the Mindset of Elite Performers
+      </h1>
+      <p class="mt-6 text-lg">
+        Daily coaching, personalized routines, and mental toughness strategies—develop the discipline to outwork and outperform every day.
+      </p>
+      <button class="mt-8 px-6 py-3 bg-neon-orange text-lg font-semibold rounded-md shadow-lg hover:bg-orange-500 transition-all">
+        Get Started Now
+      </button>
+      <img src="hero-ui.png" alt="App Preview" class="mx-auto mt-10 w-2/3 md:w-1/2" />
+    </div>
+  </section>
+
+  <!-- Core Features Section -->
+  <section class="bg-light-gray py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Core Features</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <img src="stopwatch-icon.png" class="w-16 mx-auto" alt="Daily Coaching" />
+          <h3 class="text-xl font-semibold mt-4">Daily Coaching from Top Professionals</h3>
+          <p class="mt-2">Get personalized daily coaching designed to build habits and consistency used by elite performers.</p>
+          <button class="mt-4 px-4 py-2 text-neon-orange hover:underline">Explore Programs</button>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <img src="graph-icon.png" class="w-16 mx-auto" alt="Progress Tracker" />
+          <h3 class="text-xl font-semibold mt-4">Gamified Progress Tracker</h3>
+          <p class="mt-2">Track your performance stats—resilience, focus, energy, and momentum—just like a pro athlete.</p>
+          <button class="mt-4 px-4 py-2 text-neon-orange hover:underline">See How It Works</button>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <img src="compass-icon.png" class="w-16 mx-auto" alt="Tailored Coaching" />
+          <h3 class="text-xl font-semibold mt-4">Tailored Coaching Paths for Any Goal</h3>
+          <p class="mt-2">Choose adaptive coaching paths aligned to your career, fitness, or creative journey.</p>
+          <button class="mt-4 px-4 py-2 text-neon-orange hover:underline">Find My Path</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-midnight-blue text-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Success Stories</h2>
+      <div class="space-y-6">
+        <blockquote class="text-lg italic text-center">
+          "This app gave me the framework to develop the discipline and focus I lacked."
+        </blockquote>
+        <blockquote class="text-lg italic text-center">
+          "Tracking my progress with gamified stats motivated me daily to push beyond my limits."
+        </blockquote>
+        <blockquote class="text-lg italic text-center">
+          "It’s not just about achieving goals—it’s about becoming the best version of myself."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Overview Section -->
+  <section class="bg-light-gray py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Program Overview</h2>
+      <ul class="grid gap-4 md:grid-cols-3 text-center">
+        <li class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-semibold">Mental Toughness Training</h3>
+          <p class="mt-2">Build emotional resilience and composure.</p>
+        </li>
+        <li class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-semibold">Daily Adaptive Challenges</h3>
+          <p class="mt-2">Push yourself with bite-sized, actionable steps.</p>
+        </li>
+        <li class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-semibold">Energy Management Routines</h3>
+          <p class="mt-2">Optimize your day with structured, high-energy practices.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-midnight-blue text-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">FAQ</h2>
+      <div x-data="{ open: null }">
+        <div class="mb-4">
+          <button @click="open = open === 1 ? null : 1" class="w-full text-left">
+            How do the daily coaching programs work?
+          </button>
+          <div x-show="open === 1" class="mt-2">
+            Our coaches provide daily actionable routines to improve focus and discipline.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light-gray py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2024 Momentum. All Rights Reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-neon-orange mx-2">Instagram</a>
+        <a href="#" class="text-neon-orange mx-2">LinkedIn</a>
+        <a href="#" class="text-neon-orange mx-2">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
